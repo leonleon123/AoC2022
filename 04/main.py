@@ -1,0 +1,2 @@
+d=[[[int(z) for z in y.split('-')] for y in x.split(',')] for x in open('input.txt').read().split('\n') if x]
+print(sum([a<=c and b>=d or c<=a and d>=b for [a,b],[c,d] in d]),sum([not(b<c or d<a) for [a,b],[c,d] in d]),sep='\n')
