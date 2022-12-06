@@ -1,0 +1,1 @@
+print((f:=lambda m,d:[len(set(d[i:i+m])) for i in range(0,len(d)-m-1)].index(m)+m)(4,(d:=open('input.txt').read())),f(14,d),sep='\n')
